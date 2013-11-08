@@ -2,7 +2,8 @@ require 'dashing'
 
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN_KAI'
-
+  set :default_dashboard, 'kai'
+  
   helpers do
     def protected!
      # Put any authentication code you want in here.
