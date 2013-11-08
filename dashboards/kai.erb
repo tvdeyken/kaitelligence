@@ -1,6 +1,6 @@
 <script type='text/javascript'>
 $(function() {
-Dashing.gridsterLayout('[{"col":3,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":2,"row":3,"size_x":2,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":2},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":2,"size_y":2},{"col":4,"row":3,"size_x":2,"size_y":1}]')
+Dashing.gridsterLayout('[{"col":3,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":1,"row":3,"size_x":2,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":3,"row":3,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":2,"size_y":2},{"col":4,"row":3,"size_x":2,"size_y":1}]')
 Dashing.widget_base_dimensions = [370, 340]
 Dashing.numColumns = 5
 });
@@ -11,7 +11,7 @@ Dashing.numColumns = 5
 
 <div class="gridster">
   <ul>
-    
+        
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="weather" data-view="Weather"></div>
     </li>
@@ -33,11 +33,11 @@ Dashing.numColumns = 5
       <div data-id="synergy" data-view="Hotness" data-title="Synergy Hotness" data-cool="20" data-warm="80"></div>
     </li>
     
-    
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
-      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="fblinkstat" data-view="List" data-unordered="true" data-title="FB link stats" data-moreinfo="for startrekonline.com links"></div>
+    <i class="icon-facebook icon-background"></i>
     </li>
-
+    
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="karma" data-view="Number" data-title="Karma" style="background-color:#96bf48;"></div>
       <i class="icon-heart icon-background"></i>
@@ -51,6 +51,9 @@ Dashing.numColumns = 5
       <div data-id="twitter_mentions" data-view="Comments" style="background-color:#ff9618;" data-moreinfo="Tweets tagged with #sto"></div>
       <i class="icon-twitter icon-background"></i>
     </li>
+    
+
+    
 
   </ul>
   <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>

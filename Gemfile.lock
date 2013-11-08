@@ -23,6 +23,7 @@ GEM
     faraday (0.8.8)
       multipart-post (~> 1.2.0)
     hike (1.2.3)
+    json (1.7.7)
     multi_json (1.8.2)
     multipart-post (1.2.0)
     rack (1.5.2)
@@ -71,5 +72,6 @@ PLATFORMS
 
 DEPENDENCIES
   dashing
+  json
   twitter
   xml-simple
