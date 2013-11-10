@@ -1,0 +1,60 @@
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":1,"row":3,"size_x":1,"size_y":1},{"col":2,"row":3,"size_x":1,"size_y":1},{"col":3,"row":3,"size_x":1,"size_y":1},{"col":4,"row":3,"size_x":1,"size_y":1}]')
+Dashing.widget_base_dimensions = [370, 340]
+Dashing.numColumns = 4
+});
+</script>
+
+
+<% content_for :title do %>Kaitelligence<% end %>
+
+<div class="gridster">
+  <ul>
+            
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th1" data-view="Text" data-title="TH 1" data-text="No Data" data-moreinfo="SO Update Kewill -> CEP"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th2" data-view="Text" data-title="TH 2" data-text="No Data" data-moreinfo="SKU Update Kewill -> CEP"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th3" data-view="Text" data-title="TH 3" data-text="No Data" data-moreinfo="Addresses Update Kewill -> CEP"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th4" data-view="Text" data-title="TH 4" data-text="No Data" data-moreinfo="CEP -> TH"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th5" data-view="Text" data-title="TH 5" data-text="No Data" data-moreinfo="CEP -> KEWILL"></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th6" data-view="Text" data-title="TH 6" data-text="No Data" data-moreinfo="..."></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th7" data-view="Text" data-title="TH 7" data-text="No Data" data-moreinfo="..."></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th8" data-view="Text" data-title="TH 8" data-text="No Data" data-moreinfo="..."></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th9" data-view="Text" data-title="TH 9" data-text="No Data" data-moreinfo="..."></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th10" data-view="Text" data-title="TH 10" data-text="No Data" data-moreinfo="..."></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th11" data-view="Text" data-title="TH 11" data-text="No Data" data-moreinfo="..."></div>
+    </li>
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="th12" data-view="Text" data-title="TH 12" data-text="No Data" data-moreinfo="..."></div>
+    </li>
+    
+
+    
+
+  </ul>
+  <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
+</div>
