@@ -3,7 +3,7 @@ require 'net/http'
 require 'json'
 
 # The url you are tracking
-sharedlink = URI::encode('startrekonline.com')
+sharedlink = URI::encode('seaconlogistics.com')
 
 SCHEDULER.every '15m' do
   fbstat = []

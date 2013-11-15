@@ -10,7 +10,7 @@ Twitter.configure do |config|
   config.oauth_token_secret = 'UFqMEgz57RZ7TEYqOCp37uO8ltFZwTTFZcb5WcJkMZvuL'
 end
 
-search_term = URI::encode('#sto')
+search_term = URI::encode('seaconlogistics')
 
 SCHEDULER.every '10m', :first_in => 0 do |job|
   begin
