@@ -41,22 +41,22 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
   end
 end
 
-SCHEDULER.every '5s', :first_in => '5s' do |job|
+SCHEDULER.every '15s', :first_in => '5s' do |job|
 
-  if index == 0
+#  if index == 0
     send_event('foursquare', title: 'Here right now', value: herenow, photo: '0')
-  elsif index == 1
-    send_event('foursquare', title: 'Total Check Ins', value: checkins, photo: '0')
-  elsif index == 2
-
-    if(users.size != 0)
-      user_index = (user_index + 1)%total_users
-
-      name = users[user_index]['user']['firstName']
-      picture = users[user_index]['user']['photo']['prefix'] + "300x300" + users[user_index]['user']['photo']['suffix']
-      send_event('foursquare', title: "#{name} is here", value: '', photo: picture)
-    end
-  end
-
-  index = (index + 1)%3
+#  elsif index == 1
+#    send_event('foursquare', title: 'Total Check Ins', value: checkins, photo: '0')
+#  elsif index == 2
+#
+#    if(users.size != 0)
+#      user_index = (user_index + 1)%total_users
+#
+#      name = users[user_index]['user']['firstName']
+#      picture = users[user_index]['user']['photo']['prefix'] + "300x300" + users[user_index]['user']['photo']['suffix']
+#      send_event('foursquare', title: "#{name} is here", value: '', photo: picture)
+#    end
+#  end
+#
+#  index = (index + 1)%3
 end
