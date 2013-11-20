@@ -5,7 +5,7 @@ require 'json'
 # The url you are tracking
 sharedlink = URI::encode('https://www.facebook.com/SeaconLogistics')
 
-SCHEDULER.every '15m' do
+SCHEDULER.every '15m', :first_in => '30s' do
   fbstat = []
 
   http = Net::HTTP.new('graph.facebook.com')
