@@ -10,7 +10,7 @@ require 'cgi'
 calendars = [{name: 'Kaitelligence', url: 'https://www.google.com/calendar/feeds/h1ru65apgr24ubqgtfhlol6hv4%40group.calendar.google.com/private-d6922215910e96ce1da61d01a8a1ba31/full'}]
 events = Array.new
 
-SCHEDULER.every '10s', :first_in => 0 do |job|
+SCHEDULER.every '10m', :first_in => 0 do |job|
 	events = Array.new
 	min = CGI.escape(DateTime.now().to_s)
 	max = CGI.escape((DateTime.now()+7).to_s)
