@@ -1,0 +1,36 @@
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":1,"row":3,"size_x":1,"size_y":1},{"col":1,"row":4,"size_x":1,"size_y":1},{"col":1,"row":5,"size_x":1,"size_y":1}]')
+});
+</script>
+
+<% content_for :title do %>Kaitelligence<% end %>
+
+<div class="gridster">
+  <ul>
+
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="tickets" data-view="Hotness" data-title="Tickets in Raw" data-cool="0" data-warm="2"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="kewilltickets" data-view="Hotness" data-title="Kewill Tickets" data-cool="10" data-warm="15"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="it_temp" data-view="Hotness" data-title="IT Temperature" data-cool="20" data-warm="24"></div>
+    </li>
+        
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="weather" data-view="Weather"></div>
+    </li>
+    
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+  </ul>
+</div>
