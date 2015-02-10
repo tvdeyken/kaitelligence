@@ -1,1 +1,1 @@
-Dashing Dashboard Directly Displaying Decisive Data
+Check out http://shopify.github.com/dashing for more information.
