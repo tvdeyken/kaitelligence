@@ -18,7 +18,7 @@ class Dashing.TimeSinceLast extends Dashing.Widget
     if (@get('data-red-after'))
       redAfter = parseInt(@get('data-red-after'))
     else
-      redAfter = 10
+      redAfter = 1200
     diff = moment().unix() - moment(@last_event).unix()
     if (diff > redAfter)
       "#e84916"
