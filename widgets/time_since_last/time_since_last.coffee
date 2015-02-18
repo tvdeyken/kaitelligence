@@ -15,10 +15,10 @@ class Dashing.TimeSinceLast extends Dashing.Widget
     $(@node).css('background-color', @backgroundColor())
 
   backgroundColor: =>
-    if (@get('red-after'))
-      redAfter = parseInt(@get('red-after'))
+    if (@get('data-red-after'))
+      redAfter = parseInt(@get('data-red-after'))
     else
-      redAfter = 100
+      redAfter = 10
     diff = moment().unix() - moment(@last_event).unix()
     if (diff > redAfter)
       "#e84916"
