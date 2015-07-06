@@ -1,20 +1,18 @@
 <script type='text/javascript'>
 $(function() {
-	Dashing.widget_base_dimensions = [462, 340]
+    Dashing.widget_base_dimensions = [462, 340]
     Dashing.numColumns = 4
-});
+    });
 </script>
 
 <% content_for :title do %>Kaitelligence<% end %>
 
 <div class="gridster">
   <ul>
-
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-view="Clock"></div>
       <i class="icon-time icon-background"></i>
     </li>
-
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="kewilltickets" data-view="Hotness" data-title="Kewill Tickets" data-cool="10" data-warm="15"></div>
@@ -23,33 +21,38 @@ $(function() {
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="bltickets" data-view="Hotness" data-title="Brand Loyalty Tickets" data-cool="5" data-warm="15"></div>
     </li>
+
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="tickets" data-view="Hotness" data-title="Tickets in Raw" data-cool="0" data-warm="2"></div>
     </li>
+
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="it_temp" data-view="Hotness" data-title="IT Temperature" data-cool="20" data-warm="24"></div>
+      <div data-id="bookings" data-view="Hotness" data-title="Booking Portal" data-cool="0" data-warm="1"></div>
     </li>
-        
+
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="ecom" data-view="Hotness" data-title="ecom" data-cool="0" data-warm="1"></div>
     </li>
-    
-	<li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-view="Countdown" data-title="Maintenance Weekend" data-end="15-may-2015 20:00:00"></div>
-	</li>
 
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-view="Countdown" data-title="Maintenance Weekend" data-end="17-july-2015 20:00:00"></div>
+    </li>
 
-	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-		<div data-id="time_since_last" data-view="TimeSinceLast" data-title="ESB Heartbeat" data-red-after="1200"></div>
-	</li>
-    
-    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="time_since_last" data-view="TimeSinceLast" data-title="ESB Heartbeat" data-red-after="1200"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="twitter_mentions" data-view="Comments" style="background-color:#1286be;" data-moreinfo="Tweets for #SeaconLogistics"></div>
       <i class="icon-twitter icon-background"></i>
     </li>
+
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="weather" data-view="Weather"></div>
     </li>
 
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="it_temp" data-view="Hotness" data-title="IT Temperature" data-cool="20" data-warm="24"></div>
+    </li>
   </ul>
 </div>
