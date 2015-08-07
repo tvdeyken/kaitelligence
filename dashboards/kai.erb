@@ -10,12 +10,11 @@ $(function() {
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-view="Clock"></div>
-      <i class="icon-time icon-background"></i>
+        <div data-id="time_since_last" data-view="TimeSinceLast" data-title="ESB Heartbeat" data-red-after="1200"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="ecom" data-view="Hotness" data-title="ecom" data-cool="0" data-warm="1"></div>
+      <div data-id="ecom" data-view="Hotness" data-title="ecom" data-cool="0" data-warm="1"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -43,18 +42,19 @@ $(function() {
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="time_since_last" data-view="TimeSinceLast" data-title="ESB Heartbeat" data-red-after="1200"></div>
+        <div data-view="Clock"></div>
+        <i class="icon-time icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-id="weather" data-view="Weather"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="twitter_mentions" data-view="Comments" style="background-color:#1286be;" data-moreinfo="Tweets for #SeaconLogistics"></div>
       <i class="icon-twitter icon-background"></i>
     </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="weather" data-view="Weather"></div>
-    </li>
-
+      
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="it_temp" data-view="Hotness" data-title="IT Temperature" data-cool="20" data-warm="24"></div>
     </li>
