@@ -18,11 +18,18 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
 
   booking_history = JSON.parse(response.body)
 
+  # add empty dates
+  today = Date.today()
+  (today-6 .. today).each do |date|
+    next if booking_history.key?(date.to_s)
+    booking_history[date.to_s]=0
+  end
+
   points = []
   booking_history.each do |date, bookings|
     unix_date = DateTime.parse(date).to_time.to_i
     points << {x: unix_date, y: bookings}
   end
-
+  points = points.sort_by { |hsh| hsh[:x] }
   send_event('booking-history', points: points)
 end
