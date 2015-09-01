@@ -3,16 +3,16 @@ require 'json'
 require 'date'
 
 # The url you are tracking
-uri = URI.parse('http://localhost:3000')
+uri = URI.parse('https://booking.seaconlogistics.com')
 
 datalink = URI::encode('/statistics/usage?days=7')
 
 # :first_in sets how long it takes before the job is first run. In this case, it is run immediately
-SCHEDULER.every '5s', :first_in => 0 do |job|
+SCHEDULER.every '1m', :first_in => 0 do |job|
 
   http = Net::HTTP.new(uri.host, uri.port)
-  # http.use_ssl = true
-  # http.verify_mode = OpenSSL::SSL::VERIFY_NONE
+  http.use_ssl = true
+  http.verify_mode = OpenSSL::SSL::VERIFY_NONE
 
   response = http.request(Net::HTTP::Get.new(datalink))
 
