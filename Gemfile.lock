@@ -99,6 +99,3 @@ DEPENDENCIES
   nokogiri
   twitter (>= 5.9.0)
   xml-simple
-
-BUNDLED WITH
-   1.10.6
