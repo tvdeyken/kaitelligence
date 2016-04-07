@@ -1,7 +1,7 @@
 <script type='text/javascript'>
-$(function() {
-    Dashing.widget_base_dimensions = [364, 340]
-    Dashing.numColumns = 5
+    $(function() {
+        Dashing.widget_base_dimensions = [364, 340]
+        Dashing.numColumns = 5
     });
 </script>
 
@@ -10,7 +10,7 @@ $(function() {
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="time_since_last" data-view="TimeSinceLast" data-title="ESB Heartbeat" data-red-after="1200"></div>
+      <div data-id="time_since_last" data-view="TimeSinceLast" data-title="ESB Heartbeat" data-red-after="1200"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -43,15 +43,15 @@ $(function() {
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="incremental_etl" data-view="Hotness" data-title="Incremental ETL" data-cool="0" data-warm="1"></div>
-    </li>    
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-view="Clock"></div>
-        <i class="icon-time icon-background"></i>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-        <div data-id="weather" data-view="Weather"></div>
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="forecast" data-view="Forecast" data-widget_title="Kai Weather"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
