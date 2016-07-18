@@ -10,7 +10,3 @@ class Dashing.Babbler_temp extends Dashing.Widget
 
   constructor: ->
     super
-
-  ready: ->
-    # This is fired when the widget is done being rendered
-    @setIcons()
