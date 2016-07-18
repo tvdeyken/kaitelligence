@@ -8,7 +8,6 @@ babbler_ids = ["G7VJSALKBF","GBKBTZBNNN","GLWSMK7AHI","GMDHXRORLU","H72N553G7I"]
 
 SCHEDULER.every '1m', :first_in => 0 do |job|
   babbler_ids.each do |babbler_id|
-    puts babbler_id
   
     http = Net::HTTP.new("api.babbler.io", 1026)
     http.use_ssl = false
@@ -36,9 +35,7 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
       babbler_degreeDayse="NO base"
     end
   
-    # babbler_degreeDayse=babbler["degreeDays"]["value"].to_f.round(2)
     babbler_lastSeen=Time.iso8601(babbler["lastSeen"]["value"]).strftime("Last Seen on %m/%d/%Y at %H:%M:%S") 
-    puts babbler_lastSeen
     babbler_location=babbler["location"]["value"]
     
     if babbler["sealDate"]
