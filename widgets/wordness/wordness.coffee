@@ -8,7 +8,6 @@ class Dashing.Wordness extends Dashing.Widget
   onData: (data) ->
     node = $(@node)
     value = data.value
-    console.log(value)
     level = switch
       when value == 'OK' then 0
       when value == 'Busy' then 1
