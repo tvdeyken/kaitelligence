@@ -15,8 +15,7 @@ class Dashing.Wordness extends Dashing.Widget
       when value == 'Warning' then 2
       when value == 'Error' then 4
       else 
-        bucketSize = (warm - cool) / 3 # Total # of colours in middle
-        Math.ceil (value - cool) / bucketSize
+        4
   
     backgroundClass = "wordness#{level}"
     lastClass = @get "lastClass"
