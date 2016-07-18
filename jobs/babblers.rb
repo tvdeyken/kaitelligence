@@ -8,7 +8,6 @@ babbler_ids = ["G7VJSALKBF","GBKBTZBNNN","GLWSMK7AHI","GMDHXRORLU","H72N553G7I"]
 
 SCHEDULER.every '1m', :first_in => 0 do |job|
   babbler_ids.each do |babbler_id|
-  
     http = Net::HTTP.new("api.babbler.io", 1026)
     http.use_ssl = false
     http.verify_mode = OpenSSL::SSL::VERIFY_PEER
@@ -41,17 +40,21 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
     if babbler["sealDate"]
       if babbler["sealDate"]["value"] == "NA" 
         babbler_sealDate="Unsealed"
+        seal_status = "Unsealed"        
       else
         babbler_sealDate=Time.iso8601(babbler["sealDate"]["value"]).strftime("Sealed on %m/%d/%Y at %H:%M:%S")
         if babbler["sealBrokenDate"]["value"] != "NA"
           babbler_sealBrokenDate=Time.iso8601(babbler["sealBrokenDate"]["value"]).strftime("Seal broken %m/%d/%Y at %H:%M:%S")
           babbler_sealBy="BROKEN"
+          seal_status = "Broken"
         else    
           babbler_sealBy=babbler["sealDate"]["createdBy"]["value"]
+          seal_status = "Sealed"
         end
       end
     else
       babbler_sealDate="Never sealed"
+      seal_status = "Unsealed"
     end
     
     
@@ -62,6 +65,7 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
       babbler_sealBrokenDate: "#{babbler_sealBrokenDate}",
       babbler_sealDate: "#{babbler_sealDate}",
       babbler_sealBy: "#{babbler_sealBy}", 
+      seal_status: "#{seal_status}",
       babbler_temperature: "#{babbler_temperature}&deg;", 
       babbler_baseTemperature: "#{babbler_baseTemperature}&deg;"})
     end
