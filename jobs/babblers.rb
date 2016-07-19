@@ -6,7 +6,7 @@ require 'time'
 
 babbler_ids = ["G7VJSALKBF","GBKBTZBNNN","GLWSMK7AHI","GMDHXRORLU","H72N553G7I"].freeze
 
-SCHEDULER.every '1m', :first_in => 0 do |job|
+SCHEDULER.every '15m', :first_in => 0 do |job|
   babbler_ids.each do |babbler_id|
     http = Net::HTTP.new("api.babbler.io", 1026)
     http.use_ssl = false
@@ -36,6 +36,8 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
   
     babbler_lastSeen=Time.iso8601(babbler["lastSeen"]["value"]).strftime("Last Seen on %m/%d/%Y at %H:%M:%S") 
     babbler_location=babbler["location"]["value"]
+    babbler_location=babbler_location.split(',').map{|s| s.to_f }.reverse
+    
     
     if babbler["sealDate"]
       if babbler["sealDate"]["value"] == "NA" 
