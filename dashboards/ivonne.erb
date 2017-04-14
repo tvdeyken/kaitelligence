@@ -1,0 +1,41 @@
+<script type='text/javascript'>
+    $(function() {
+        Dashing.widget_base_dimensions = [370, 340]
+        Dashing.numColumns = 5
+    });
+</script>
+
+<% content_for :title do %>Kaitelligence<% end %>
+
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="forecast" data-view="Forecast" data-widget_title="Kai Weather"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="twitter_mentions" data-view="Comments" style="background-color:#1286be;" data-moreinfo="Tweets for #SeaconLogistics"></div>
+      <i class="icon-twitter icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="outboard" data-view="Outboard" data-title="Who's Where"></div>
+    </li>
+
+
+
+
+
+
+
+
+
+
+  </ul>
+</div>

@@ -3,6 +3,7 @@ require 'dashing'
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN_KAI'
   set :default_dashboard, 'kai'
+  set :outboard_file, 'https://raw.githubusercontent.com/mirrorspock/kaitelligence/master/widgets/outboard/outboard.txt'  
   
   helpers do
     def protected!

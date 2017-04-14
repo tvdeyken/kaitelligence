@@ -99,3 +99,9 @@ DEPENDENCIES
   nokogiri
   twitter (>= 5.9.0)
   xml-simple
+
+RUBY VERSION
+   ruby 2.0.0p648
+
+BUNDLED WITH
+   1.14.6

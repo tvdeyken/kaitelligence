@@ -2,8 +2,8 @@
 # Format: Name | Status | Optional comment (keep it short, keep it clean)
 # Possible statuses are "In", "Out", "WAH" for work at home, "Offsite" and "Vacation"
 
-Mr. Baxter | In
-Mr. Dobisch | Vacation | Back next week
-Mr. Kirkeby | Out | In tomorrow
-Ms. Kubelik | In
-Mr. Sheldrake | Offsite | Offsite meeting
+Mr. Geerts | In
+Mr. Schaerlaeckens | Vacation | Back next week
+Mr. Hermans | Out | In tomorrow
+Mr. Reiter | WAH
+Ms. Vallen | Offsite | Offsite meeting
