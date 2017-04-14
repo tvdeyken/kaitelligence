@@ -2,6 +2,7 @@
     $(function() {
         Dashing.widget_base_dimensions = [370, 340]
         Dashing.numColumns = 5
+      Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":2,"size_y":1},{"col":5,"row":2,"size_x":1,"size_y":2},{"col":1,"row":2,"size_x":2,"size_y":1},{"col":3,"row":2,"size_x":2,"size_y":2},{"col":1,"row":3,"size_x":2,"size_y":1}]')
     });
 </script>
 
@@ -9,6 +10,11 @@
 
 <div class="gridster">
   <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Image" data-image="/seacon_logo.png" style="background-color:white;" width=280></div>
+    </li>
+
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-view="Clock"></div>
@@ -24,17 +30,22 @@
       <i class="icon-twitter icon-background"></i>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
       <div data-id="outboard" data-view="Outboard" data-title="Who's Where"></div>
     </li>
 
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="nu-nl" data-view="News" data-title="Nu.nl" data-interval="30" style="background-color:#1a8cff;"></div>
+    </li>
 
 
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="welcome" data-view="Text" data-title="Welcome" data-text="Frank" style="background-color:#004d99;"></div>
+    </li>
 
-
-
-
-
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="logistiek" data-view="News" data-title="Logistiek" data-interval="30" style="background-color:#4da6ff;"></div>
+    </li>
 
 
   </ul>

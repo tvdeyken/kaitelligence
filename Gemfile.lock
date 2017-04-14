@@ -26,6 +26,7 @@ GEM
     faraday (0.9.1)
       multipart-post (>= 1.2, < 3)
     hike (1.2.3)
+    htmlentities (4.3.4)
     http (0.6.3)
       http_parser.rb (~> 0.6.0)
     http_parser.rb (0.6.0)
@@ -94,6 +95,7 @@ PLATFORMS
 
 DEPENDENCIES
   dashing
+  htmlentities
   httparty
   json
   nokogiri
