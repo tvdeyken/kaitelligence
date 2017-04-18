@@ -8,10 +8,9 @@
         event.preventDefault();
     
         var rawData = {
-            guestname: $('#guestname').val(),
-            company: $('#company').val(),
-            key: $('#key').val(),
-            refer_page: $('#refer_page').val()
+            text: $('#guestname').val(),
+            moreinfo: $('#company').val(),
+            auth_token: $('#key').val()
         };
     
         var contactData = JSON.stringify(rawData);
