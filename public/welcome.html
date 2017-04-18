@@ -16,12 +16,12 @@
     
         var contactData = JSON.stringify(rawData);
     
-        //console.log(contactData);
+        console.log(contactData);
     
         var url = 'http://kaitelligence.herokuapp.com/widgets/welcome';
     
         $.post(url, function(response) {
-            //console.log(response);
+            console.log(response);
         
             if (response === ["success"]) {
                 // show user a succesfully posted message.
