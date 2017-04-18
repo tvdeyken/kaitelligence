@@ -1,0 +1,55 @@
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script>
+ 
+  $(function() {
+    $('#contact').submit(function(event){
+        event.preventDefault();
+    
+        var rawData = {
+            guestname: $('#guestname').val(),
+            company: $('#company').val(),
+            key: $('#key').val(),
+            refer_page: $('#refer_page').val()
+        };
+    
+        var contactData = JSON.stringify(rawData);
+    
+        //console.log(contactData);
+    
+        var url = 'http://kaitelligence.herokuapp.com/widgets/welcome';
+    
+        $.post(url, function(response) {
+            //console.log(response);
+        
+            if (response === ["success"]) {
+                // show user a succesfully posted message.
+            } else {
+                console.log(response);
+            }
+        });
+    
+    });
+
+  });
+ 
+  </script>
+
+<script>
+  
+
+
+</script>
+</head>
+<body>
+ 
+<form id="contact" action="#" method="post">
+    <input placeholder="name" type="text" name="guestname" id="guestname">
+    <input placeholder="company" type="text" name="company" id="company">
+    <input placeholder="key" type="text" name="key" id="key">
+     <input type="hidden" name="refer_page" id="refer_page" value="success.php">
+    <input type="submit" value="submit">
+</form>
+ 
+</body>
