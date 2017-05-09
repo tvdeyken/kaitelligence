@@ -1,0 +1,89 @@
+<script type='text/javascript'>
+    $(function() {
+        Dashing.widget_base_dimensions = [370, 340]
+        Dashing.numColumns = 5
+    });
+</script>
+
+
+<% content_for :title do %>Roller Dashboard<% end %>
+<div class="gridster">
+  <ul>
+    
+  <!-- LOGO -->
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-view="Image" data-image="/seacon_logo.png" style="background-color:white;" width=280></div>
+      </li>
+  
+<!-- clock -->
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+<!-- weather -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="forecast-duisburg" data-view="Forecast" data-widget_title="Kai Weather"></div>
+    </li>
+
+<!-- Newsfeed -->
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="nu-nl" data-view="News" data-title="Nu.nl" data-interval="30" style="background-color:#1a8cff;"></div>
+    </li>
+
+
+
+<!-- TRANSPORT -->
+<!-- unbatched eaches today -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="roller" data-view="Hotness" data-title="Total Open Eaches" data-cool="350" data-warm="400"></div>
+    </li>
+
+
+<!-- batched eaches today -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="roller" data-view="Hotness" data-title="Batched Eaches Today" data-cool="350" data-warm="400"></div>
+    </li>
+    
+<!-- Batches and cubage -->
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="roller" data-view="Hotness" data-title="Batches and Cubage" data-cool="0" data-warm="2"></div>
+    </li>
+
+
+
+<!-- LOCATION overview -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="roller-locations" data-view="List" data-unordered="true" data-title="Locations" data-moreinfo="Processed Batches per Location"></div>
+    </li>
+
+
+<!-- WAREHOUSE -->
+<!-- EA in booking open -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="tickets" data-view="Hotness" data-title="Eaches to be picked" data-cool="0" data-warm="2"></div>
+    </li>
+
+<!-- EA in routing -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="tickets" data-view="Hotness" data-title="Eaches in Picking" data-cool="0" data-warm="2"></div>
+    </li>
+
+<!-- EA on workflow -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="tickets" data-view="Hotness" data-title="Eaches Ready for shipment" data-cool="0" data-warm="2"></div>
+    </li>
+
+<!-- m3 / stock -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="tickets" data-view="Hotness" data-title="Stock Cubage" data-cool="0" data-warm="2"></div>
+    </li>
+
+
+
+
+
+
+  </ul>
+</div>
