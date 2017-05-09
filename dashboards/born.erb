@@ -1,7 +1,6 @@
 <script type='text/javascript'>
 $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":2},{"col":3,"row":1,"size_x":2,"size_y":1},{"col":5,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":2},{"col":3,"row":2,"size_x":2,"size_y":1},{"col":2,"row":3,"size_x":2,"size_y":1},{"col":4,"row":3,"size_x":1,"size_y":1}]')
       Dashing.widget_base_dimensions = [370, 340]
   Dashing.numColumns = 5
 });
@@ -12,20 +11,37 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":
 
 <div class="gridster">
   <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="born-country-history" data-renderer="bar" data-summary-method="sum" style="background-color:#33B8AF" data-colors="#347f54" data-view="Rickshawgraph" data-title="Shipments per Country"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="born-modality-history" data-renderer="bar" data-summary-method="sum" style="background-color:#33B8AF" data-colors="#347f54" data-view="Rickshawgraph" data-title="Shipments per Modality"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="born-shipments-history" data-renderer="bar" data-summary-method="sum" style="background-color:#33B8AF" data-colors="#347f54" data-view="Rickshawgraph" data-title="Shipments per Modality"></div>
+    </li>
+    
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="fuelprice" data-view="Number" data-title="Current Diesel Price" data-prefix="€"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="logistiek" data-view="News" data-title="Logistiek" data-interval="30" style="background-color:#4da6ff;"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="born-info" data-view="Outboard" data-title="INFO"></div>
+    </li>
+
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-view="Clock"></div>
       <i class="icon-time icon-background"></i>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="3">
-      <div data-view="Image" data-image="/map.png"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-view="Image" data-image="/projection.png"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="synergy" data-view="Meter" data-title="Active Shipments" data-min="0" data-max="100"></div>
     </li>
 
@@ -41,11 +57,11 @@ Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":
       <div data-id="twitter_mentions" data-view="Comments" style="background-color:#blue;" data-moreinfo="Tweets tagged with #prorail"></div>
       <i class="icon-twitter icon-background"></i>
     </li>
-    
+
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="tickets" data-view="Hotness" data-title="Unconfirmed Delivered" data-cool="0" data-warm="2"></div>
     </li>
-    
+     -->
 
   </ul>
   <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>

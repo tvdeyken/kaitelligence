@@ -1,6 +1,7 @@
 require 'net/http'
 require 'json'
 require 'date'
+require 'byebug'
 
 # The url you are tracking
 uri = URI.parse('https://booking.seaconlogistics.com')

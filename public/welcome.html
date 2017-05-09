@@ -17,11 +17,12 @@
     
         console.log(contactData);
     
-        var url = 'http://kaitelligence.herokuapp.com/widgets/welcome';
+        // var url = 'http://kaitelligence.herokuapp.com/widgets/welcome';
+        var url = 'http://localhost:3030/widgets/welcome';
     
         $.post(url, function(response) {
             console.log(response);
-        
+            dataType: 'json'
             if (response === ["success"]) {
                 // show user a succesfully posted message.
             } else {
