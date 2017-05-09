@@ -9,7 +9,7 @@
 <% content_for :title do %>Roller Dashboard<% end %>
 <div class="gridster">
   <ul>
-    
+  <!-- ROW 1 -->
   <!-- LOGO -->
       <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
         <div data-view="Image" data-image="/seacon_logo.png" style="background-color:white;" width=280></div>
@@ -24,7 +24,7 @@
 
 <!-- weather -->
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="forecast-duisburg" data-view="Forecast" data-widget_title="Kai Weather"></div>
+      <div data-id="forecast-duisburg" data-view="Forecast" data-widget_title="Duisburg Weather"></div>
     </li>
 
 <!-- Newsfeed -->
@@ -33,32 +33,33 @@
     </li>
 
 
+<!-- ROW 2 -->
 
 <!-- TRANSPORT -->
 <!-- unbatched eaches today -->
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="roller" data-view="Hotness" data-title="Total Open Eaches" data-cool="350" data-warm="400"></div>
+      <div data-id="13462-totalopeneaches" data-view="Hotness" data-title="Total Open Eaches" data-cool="350" data-warm="400"></div>
     </li>
 
 
 <!-- batched eaches today -->
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="roller" data-view="Hotness" data-title="Batched Eaches Today" data-cool="350" data-warm="400"></div>
+      <div data-id="13462-batchedeaches" data-view="Hotness" data-title="Batched Eaches Today" data-cool="350" data-warm="401"></div>
     </li>
     
 <!-- Batches and cubage -->
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="roller" data-view="Hotness" data-title="Batches and Cubage" data-cool="0" data-warm="2"></div>
+      <div data-id="13462-batchedandcubage" data-view="DoubleText" data-title="Batches and Cubage" style="background-color:#004d99;"> </div>
     </li>
 
 
 
 <!-- LOCATION overview -->
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
-      <div data-id="roller-locations" data-view="List" data-unordered="true" data-title="Locations" data-moreinfo="Processed Batches per Location"></div>
+      <div data-id="13462-locations" data-view="List" data-unordered="true" data-title="Locations" data-moreinfo="Processed Batches per Location"></div>
     </li>
 
-
+<!-- ROW 3 -->
 <!-- WAREHOUSE -->
 <!-- EA in booking open -->
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -77,7 +78,7 @@
 
 <!-- m3 / stock -->
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="tickets" data-view="Hotness" data-title="Stock Cubage" data-cool="0" data-warm="2"></div>
+      <div data-id="13462-stock" data-view="DoubleText" data-title="Stock Cubage" style="background-color:#004d99;"></div>
     </li>
 
 
