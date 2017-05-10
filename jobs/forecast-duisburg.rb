@@ -5,8 +5,8 @@ require 'json'
 forecast_api_key = "74b33c58804eebb7538162226863e21b"
 
 # Latitude, Longitude for location
-forecast_location_lat = "51.39031372728878"
-forecast_location_long = "6.134470774757668"
+forecast_location_lat = "51.447655"
+forecast_location_long = "6.744923"
 
 # Unit Format
 # "us" - U.S. Imperial
