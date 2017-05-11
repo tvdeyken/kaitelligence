@@ -1,0 +1,91 @@
+<script type='text/javascript'>
+    $(function() {
+        Dashing.widget_base_dimensions = [370, 340]
+        Dashing.numColumns = 5
+    });
+</script>
+
+
+<% content_for :title do %>FSM Dashboard<% end %>
+<div class="gridster">
+  <ul>
+  <!-- ROW 1 -->
+  <!-- LOGO -->
+      <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+        <div data-view="Image" data-image="/c13462.png" style="background-color:white;" width=280></div>
+      </li>
+  
+<!-- clock -->
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+<!-- weather -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="forecast-duisburg" data-view="Forecast" data-widget_title="Duisburg Weather"></div>
+    </li>
+
+<!-- Newsfeed -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="logistic-heute" data-view="News" data-title="Logistic Heute" data-interval="30" style="background-color:#1a8cff;"></div>
+    </li>
+
+<!-- LOCATION overview -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="3">
+      <div data-id="13462-locations" data-view="List" data-unordered="true" data-title="Locations" data-moreinfo="Processed Batches per Location"></div>
+    </li>
+
+
+<!-- ROW 2 -->
+
+<!-- TRANSPORT -->
+<!-- unbatched eaches today -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="13462-totalopeneaches" data-view="Hotness" data-title="Total Open Eaches" data-cool="2000000" data-warm="5000000"></div>
+    </li>
+
+
+<!-- batched eaches today -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="13462-batchedeaches" data-view="Hotness" data-title="Batched Eaches Today" data-cool="350" data-warm="401"></div>
+    </li>
+    
+<!-- Batches and cubage -->
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="13462-batchedandcubage" data-view="DoubleText" data-title="Batches and Cubage" style="background-color:#004d99;"> </div>
+    </li>
+
+
+
+
+<!-- ROW 3 -->
+<!-- WAREHOUSE -->
+<!-- EA in booking open -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="13462-eachestobepicked" data-view="Hotness" data-title="Eaches to be picked" data-cool="350" data-warm="401"></div>
+    </li>
+
+<!-- EA in routing -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="13462-eachesinpicking" data-view="Hotness" data-title="Eaches in Picking" data-cool="350" data-warm="401"></div>
+    </li>
+
+<!-- EA on workflow -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="13462-eachesreadyforshipment" data-view="Hotness" data-title="Eaches Ready for shipment" data-cool="2000000" data-warm="5000000"></div>
+    </li>
+
+<!-- m3 / stock -->
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="13462-stock" data-view="DoubleText" data-title="Current Stock" style="background-color:#004d99;"></div>
+    </li>
+
+
+
+
+
+
+  </ul>
+</div>

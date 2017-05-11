@@ -8,7 +8,8 @@ news_feeds = {
   "mashable" => "http://feeds.feedburner.com/Mashable",
   "techcrunch" => "http://feeds.feedburner.com/TechCrunch/",
   "nu-nl" => "http://www.nu.nl/rss",
-  "logistiek" => "http://www.logistiek.nl/rss/feed/nieuws/logistieke-dienstverlening"
+  "logistiek" => "http://www.logistiek.nl/rss/feed/nieuws/logistieke-dienstverlening",
+  "logistic-heute" => "http://www.logistik-heute.de/RSS-News-Feed/Alles"
 }
 
 Decoder = HTMLEntities.new
