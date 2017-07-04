@@ -10,7 +10,7 @@ def get_todays_events_from_calendar url
   events = calendar.first.events.sort { |a,b| b.dtstart <=> a.dtstart }
 
   events.each_with_object([]) do |event, summaries|
-    if DateTime.now.between?(Date.parse(event.dtstart.to_s), Date.parse(event.dtend.to_s))
+    if DateTime.now.between?(Date.parse(event.dtstart.to_datetime), Date.parse(event.dtend.to_datetime))
       summaries.push(event.summary)
     end
   end
