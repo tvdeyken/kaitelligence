@@ -8,7 +8,6 @@ require 'net/http'
 def get_todays_events_from_calendar url
   calendar = Icalendar.parse(open(url))
   events = calendar.first.events.sort { |a,b| b.dtstart <=> a.dtstart }
-  byebug
   events.each_with_object([]) do |event, summaries|
     if DateTime.now.between?(Date.parse(event.dtstart.to_s), Date.parse(event.dtend.to_s))
       summaries.push(event.summary)
