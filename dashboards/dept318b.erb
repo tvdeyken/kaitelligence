@@ -1,74 +1,77 @@
 <script type='text/javascript'>
 $(function() {
   // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
-  Dashing.widget_base_dimensions = [370, 340]
-  Dashing.numColumns = 5
+  Dashing.widget_base_dimensions = [185, 170]
+  Dashing.numColumns = 10
 });
 </script>
 
+<script type='text/javascript'> $(function() { Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":4,"size_y":4},{"col":1,"row":5,"size_x":4,"size_y":2},{"col":9,"row":1,"size_x":2,"size_y":1},{"col":7,"row":1,"size_x":2,"size_y":1},{"col":5,"row":1,"size_x":2,"size_y":1},{"col":9,"row":6,"size_x":2,"size_y":2},{"col":5,"row":4,"size_x":2,"size_y":2},{"col":7,"row":2,"size_x":2,"size_y":2},{"col":5,"row":2,"size_x":2,"size_y":2},{"col":7,"row":4,"size_x":2,"size_y":2},{"col":9,"row":2,"size_x":2,"size_y":2},{"col":9,"row":4,"size_x":2,"size_y":2}]') }); </script>
 
 <% content_for :title do %>Department 318<% end %>
 <div class="gridster">
   <ul>
     
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+    <li data-row="1" data-col="1" data-sizex="4" data-sizey="4">
       <div data-id="eumap" data-view="Eumap" data-title="Active Tracked Shipments" style="background-color:#96d2dd"></div>
     </li>
 
-    <li data-row="3" data-col="1" data-sizex="2" data-sizey="1">
+    <li data-row="3" data-col="1" data-sizex="4" data-sizey="1">
       <div data-id="sense" data-moreinfo="Dossier 123456" data-renderer="area" style="background-color:#33B8AF" data-colors="#347f54" data-view="Rickshawgraph" data-title="Sense"></div>
     </li>
 
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="dept318_co2" data-view="Number" data-title="CO₂ Saved" data-moreinfo="In Kg"></div>
-      <i class="icon-heart icon-background"></i>
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
+      <div data-id="karma" data-view="Number" data-title="CO₂ Saved" data-moreinfo="In Kg" data-prefix="CO₂"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="xxx" data-view="Hotness" data-title="Current" data-cool="0" data-warm="2"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="xxx" data-view="Hotness" data-title="Planned" data-cool="0" data-warm="2"></div>
     </li>
     
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
       <div data-id="dept318_forecast" data-view="Forecast" data-widget_title="Kai Weather"></div>
     </li>
     
     
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
       <div data-view="Clock"></div>
       <i class="icon-time icon-background"></i>
-    </li>
+    </li> -->
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
       <div data-id="modalities" data-renderer="bar" data-summary-method="sum" style="background-color:#33B8AF" data-colors="#347f54" data-view="Rickshawgraph" data-title="Modality History"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
       <div data-id="synergy" data-view="Meter" data-moreinfo="% Multimodal" data-title="Shipments in Progress" data-min="0" data-max="100"></div>
-      <i class="icon-globe icon-background"></i>
     </li>
     
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
       <div data-id="synergy" data-view="Meter" data-moreinfo="% Multimodal" data-title="Shipments Planned" data-min="0" data-max="200"></div>
-      <i class="icon-calendar icon-background"></i>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
       <div data-id="modalities" data-renderer="area" data-summary-method="sum" style="background-color:#33B8AF" data-colors="#347f54" data-view="Rickshawgraph" data-title="Shipment History"></div>
     </li>
 
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
       <div data-id="convergence" data-view="Graph" data-title="KPI History" data-moreinfo="Disruption overview"></div>
     </li>
 
-    <!-- <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+    <!-- <li data-row="1" data-col="1" data-sizex="2" data-sizey="2">
       <div data-id="convergence" data-view="Graph" data-title="Disruption History" data-moreinfo="Disruption overview per Source"></div>
     </li> -->
 
-    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+    <li data-row="2" data-col="3" data-sizex="2" data-sizey="2">
       <div data-id="doughnutchart" data-view ="DoughnutChart" data-title="Disruption causes" data-moreinfo=""></div>
-      <i class="icon-bell icon-background"></i>
-      
     </li>
 
 
   </ul>
-  <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
 </div>
