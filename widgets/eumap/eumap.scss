@@ -1,0 +1,63 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  #fff;
+
+// ----------------------------------------------------------------------------
+// Widget-eumap styles
+// ----------------------------------------------------------------------------
+.widget-eumap {
+
+  background-color: $background-color;
+
+  .title {
+    color: #000;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    top: 10px;
+  }
+
+  svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .updated-at {
+    color: #000
+  }
+  .background {
+    fill: none;
+    pointer-events: all;
+  }
+
+  #europe {
+    fill: #ddd;
+  }
+
+  #europe-borders {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.5px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+    pointer-events: none;
+  }
+
+  .point {
+    fill: #1221ec;
+    stroke: #ffffff;
+    // opacity: 0.40;
+  }
+
+  .red {
+    fill: #c90d0d;
+  }
+
+  .green {
+    fill: #0dc92c;
+  }
+
+}
