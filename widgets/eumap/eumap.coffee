@@ -44,7 +44,7 @@ class Dashing.Eumap extends Dashing.Widget
         .enter().append("path")
           .attr("d", path)
 
-      #add province borders
+      #add country borders
       g.append("path")
           .datum(topojson.mesh(eu, eu.objects.europe, (a, b) -> a != b ))
           .attr("id", "europe-borders")
